@@ -19,4 +19,17 @@
     <string name="back_description">Back to home screen</string>
     <string name="greeting">Hello, %1$s! How can we help you today?</string>
     <string name="default_student_name">Student</string>
+
+    <string name="call_title">Call a number</string>
+    <string name="call_helper">Enter an 11-digit mobile number that starts with 03.</string>
+    <string name="hint_phone">03XXXXXXXXX</string>
+    <string name="btn_call_number">Call This Number</string>
+    <string name="error_phone_empty">Please enter a phone number</string>
+    <string name="error_phone_invalid">Enter 11 digits starting with 03</string>
+
+    <string name="link_title">Open a link</string>
+    <string name="link_helper">Type a web address. https:// is added for you if it is missing.</string>
+    <string name="hint_link">e.g. www.uol.edu.pk</string>
+    <string name="btn_open_link">Open Link</string>
+    <string name="error_link_empty">Please enter a link</string>
 </resources>

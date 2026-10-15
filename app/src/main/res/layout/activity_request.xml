@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -64,11 +65,93 @@
         android:fillViewport="true">
 
         <LinearLayout
-            android:id="@+id/requestContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp" />
+            android:padding="20dp">
+
+            <!-- Call a number -->
+            <com.google.android.material.card.MaterialCardView style="@style/Widget.UOLHelpDesk.Card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/call_title"
+                        android:textAppearance="@style/TextAppearance.UOLHelpDesk.CardTitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/call_helper"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        style="@style/Widget.UOLHelpDesk.InputField"
+                        android:layout_marginTop="16dp"
+                        android:autofillHints="phone"
+                        android:hint="@string/hint_phone"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone" />
+
+                    <Button
+                        android:id="@+id/btnCallNumber"
+                        style="@style/Widget.UOLHelpDesk.PrimaryButton"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/btn_call_number"
+                        app:icon="@drawable/ic_call" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Open a link -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.UOLHelpDesk.Card"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/link_title"
+                        android:textAppearance="@style/TextAppearance.UOLHelpDesk.CardTitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/link_helper"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etLink"
+                        style="@style/Widget.UOLHelpDesk.InputField"
+                        android:layout_marginTop="16dp"
+                        android:hint="@string/hint_link"
+                        android:imeOptions="actionDone"
+                        android:importantForAutofill="no"
+                        android:inputType="textUri" />
+
+                    <Button
+                        android:id="@+id/btnOpenLink"
+                        style="@style/Widget.UOLHelpDesk.PrimaryButton"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/btn_open_link"
+                        app:icon="@drawable/ic_open_in_new" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
     </ScrollView>
 
 </LinearLayout>
