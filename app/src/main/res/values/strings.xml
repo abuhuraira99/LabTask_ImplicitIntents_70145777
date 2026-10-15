@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">UOL Help Desk</string>
+
+    <!-- Home screen -->
+    <string name="logo_description">University of Lahore logo</string>
+    <string name="home_header_subtitle">Student Affairs Office</string>
+    <string name="home_title">Reach the university in one tap</string>
+    <string name="home_subtitle">Type your name, then choose what you need.</string>
+    <string name="hint_name">Your name</string>
+    <string name="btn_website">Visit Website</string>
+    <string name="btn_call">Call Help Desk</string>
+    <string name="btn_map">Find Campus</string>
+    <string name="btn_request">Send a Request</string>
 </resources>
