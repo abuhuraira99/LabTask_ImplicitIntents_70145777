@@ -5,9 +5,10 @@ A small Android app in Java that lets a University of Lahore student reach the u
 The home screen opens the university website, the phone dialer and the campus location in maps through implicit intents. A second screen, reached with an explicit intent, greets the student by name and lets them dial a mobile number or open a web link after checking the input.
 
 <p>
-  <img src="docs/screenshots/home.jpg" width="200" alt="Home screen">
-  <img src="docs/screenshots/request.jpg" width="200" alt="Request screen">
-  <img src="docs/screenshots/maps.jpg" width="200" alt="Maps opened from the app">
+  <img src="docs/screenshots/home.jpg" width="190" alt="Home screen">
+  <img src="docs/screenshots/request.jpg" width="190" alt="Request screen">
+  <img src="docs/screenshots/browser.jpg" width="190" alt="Browser opened from the app">
+  <img src="docs/screenshots/maps.jpg" width="190" alt="Maps opened from the app">
 </p>
 
 ## Features
