@@ -11,4 +11,5 @@
     <string name="btn_call">Call Help Desk</string>
     <string name="btn_map">Find Campus</string>
     <string name="btn_request">Send a Request</string>
+    <string name="toast_no_app">No app found for this action</string>
 </resources>
