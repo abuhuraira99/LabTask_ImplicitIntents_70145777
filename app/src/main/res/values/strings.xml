@@ -12,4 +12,11 @@
     <string name="btn_map">Find Campus</string>
     <string name="btn_request">Send a Request</string>
     <string name="toast_no_app">No app found for this action</string>
+    <string name="error_name">Please enter your name</string>
+
+    <!-- Request screen -->
+    <string name="request_title">Send a Request</string>
+    <string name="back_description">Back to home screen</string>
+    <string name="greeting">Hello, %1$s! How can we help you today?</string>
+    <string name="default_student_name">Student</string>
 </resources>

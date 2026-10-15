@@ -20,6 +20,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    /** Key used to pass the student's name to RequestActivity. */
+    public static final String EXTRA_STUDENT_NAME = "com.example.uolhelpdesk.EXTRA_STUDENT_NAME";
+
     private static final String UOL_WEBSITE = "https://www.uol.edu.pk";
     private static final String HELP_DESK_NUMBER = "tel:04212345678";
     private static final String CAMPUS_LOCATION = "geo:0,0?q=University+of+Lahore";
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnWebsite = findViewById(R.id.btnWebsite);
         Button btnCall = findViewById(R.id.btnCall);
         Button btnMap = findViewById(R.id.btnMap);
+        Button btnRequest = findViewById(R.id.btnRequest);
 
         // Implicit Intent: Android picks the browser for an https link
         btnWebsite.setOnClickListener(v -> {
@@ -67,6 +71,19 @@ public class MainActivity extends AppCompatActivity {
         btnMap.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(CAMPUS_LOCATION));
             openIntent(MainActivity.this, intent);
+        });
+
+        // Explicit Intent: names RequestActivity directly and carries the student's name
+        btnRequest.setOnClickListener(v -> {
+            String name = etName.getText().toString().trim();
+            if (name.isEmpty()) {
+                etName.setError(getString(R.string.error_name));
+                etName.requestFocus();
+                return;
+            }
+            Intent intent = new Intent(MainActivity.this, RequestActivity.class);
+            intent.putExtra(EXTRA_STUDENT_NAME, name);
+            startActivity(intent);
         });
     }
 
